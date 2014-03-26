@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>BBFD4DF1-C89C-404B-B2B2-F8E04EDCF3F3</string>
+	<string>2EE356E3-BC06-4D29-8FBF-D0387207883A</string>
 	<key>IDESourceControlProjectName</key>
 	<string>bleBasics</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>9F1BB12F-C37A-4549-BDE4-29D200E8516F</key>
-		<string>https://github.com/SensiBots/bleBasics.git</string>
+		<key>E9AD261A-96BC-4550-8ABD-FFB420E1746F</key>
+		<string>ssh://summerpygames.org/sensibots-iOS</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>bleBasics.xcodeproj/project.xcworkspace</string>
+	<string>bleBasics/bleBasics.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>9F1BB12F-C37A-4549-BDE4-29D200E8516F</key>
-		<string>../..</string>
+		<key>E9AD261A-96BC-4550-8ABD-FFB420E1746F</key>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/SensiBots/bleBasics.git</string>
+	<string>ssh://summerpygames.org/sensibots-iOS</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>9F1BB12F-C37A-4549-BDE4-29D200E8516F</string>
+	<string>E9AD261A-96BC-4550-8ABD-FFB420E1746F</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>9F1BB12F-C37A-4549-BDE4-29D200E8516F</string>
+			<string>E9AD261A-96BC-4550-8ABD-FFB420E1746F</string>
 			<key>IDESourceControlWCCName</key>
-			<string>bleBasics</string>
+			<string>sensibots-iOS</string>
 		</dict>
 	</array>
 </dict>

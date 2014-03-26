@@ -132,7 +132,7 @@
 - (IBAction)singSong:(id)sender
 {
     NSLog(@"Singing a lovely song");
-    [sensibot playHappyBirthday];
+    [sensibot playSong];
 }
 
 - (IBAction)flashLEDs:(id)sender

@@ -29,7 +29,7 @@
 -(void) toggleBackLight: (BOOL) enable;
 -(void) buzzer: (int) frequency;
 -(void) toggleLED: (BOOL) enable;
--(void) playHappyBirthday;
+-(void) playSong;
 -(void) flashLEDs;
 -(void) convertResponse: (CBCharacteristic *) response;
 

@@ -66,7 +66,7 @@
     CBUUID *temp = [CBUUID UUIDWithString:@TX_TO_BLE_DEVICE_UUID];
     [peripheral writeValue:data forCharacteristic:[characteristics objectForKey:temp] type:CBCharacteristicWriteWithoutResponse];
 }
--(void) playHappyBirthday
+-(void) playSong
 {
     UInt8 buf[3] = {0x05, 0x00, 0x00};
     
