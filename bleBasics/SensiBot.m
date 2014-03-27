@@ -111,7 +111,7 @@
         {
             case 0x0B:
                 value = buffer[2] | buffer[1] << 8;
-                self.temperature = value * 0.488759;
+                self.temperature = value;
                 NSLog(@"Temp Value: %i or %f", value, self.temperature);
                 break;
             case 0x0C:
