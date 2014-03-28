@@ -107,7 +107,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="----" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GTc-7D-LK5">
-                                <rect key="frame" x="577" y="719" width="97" height="30"/>
+                                <rect key="frame" x="467" y="719" width="207" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -242,6 +242,7 @@
                     <navigationItem key="navigationItem" id="dG3-ua-9rD"/>
                     <connections>
                         <outlet property="accelSwitch" destination="71v-gi-4dZ" id="eMj-OS-djW"/>
+                        <outlet property="accelValue" destination="GTc-7D-LK5" id="Cnd-G2-C8o"/>
                         <outlet property="backlightSwitch" destination="Gqr-xa-bcy" id="1Y8-iX-oDB"/>
                         <outlet property="buzzSlider" destination="Qxf-qb-FEU" id="cTX-Hl-EFu"/>
                         <outlet property="deviceLibVersionValue" destination="dLL-Sa-uhe" id="VI3-Rd-6ly"/>

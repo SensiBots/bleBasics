@@ -83,8 +83,9 @@
 -(void) bleDidReceiveData
 {
     tempValue.text = [NSString stringWithFormat:@"%f", sensibot.temperature];
+    accelValue.text = [NSString stringWithFormat:@"(X,Y,Z) = (%.3f,%.3f,%.3f)", sensibot.accelX, sensibot.accelY, sensibot.accelZ];
     lightValue.text = [NSString stringWithFormat:@"%f", sensibot.lux];
-    soundValue.text = [NSString stringWithFormat:@"%f", sensibot.db];    
+    soundValue.text = [NSString stringWithFormat:@"%f", sensibot.db];
 }
 
 -(void) setBleRadio: (RBL_BLE *) value forDevice: (NSUUID *) identifier

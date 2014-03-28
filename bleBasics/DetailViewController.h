@@ -25,8 +25,8 @@
     IBOutlet UISlider *ledSlider;
     IBOutlet UISwitch *tempSwitch;
     IBOutlet UITextField *tempValue;
-    IBOutlet UISegmentedControl *tempSegment;
     IBOutlet UISwitch *accelSwitch;
+    IBOutlet UITextField *accelValue;
     IBOutlet UISwitch *lightSwitch;
     IBOutlet UITextField *lightValue;
     IBOutlet UISwitch *soundSwitch;
