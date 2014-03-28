@@ -18,9 +18,9 @@
 - (IBAction)singSong:(id)sender;
 - (IBAction)flashLEDs:(id)sender;
 - (IBAction)toggleTemp:(id)sender;
-- (IBAction)switchTempScale:(id)sender;
 - (IBAction)toggleLight:(id)sender;
 - (IBAction)toggleSound:(id)sender;
+- (IBAction)toggleAccel:(id)sender;
 
 @end
 
@@ -28,7 +28,6 @@
 {
     RBL_BLE *bluetooth;
     SensiBot *sensibot;
-    int scaleConvert;
 }
 - (void)viewDidLoad
 {
@@ -147,11 +146,6 @@
     [sensibot toggleTemp:tempSwitch.on];    
 }
 
-- (IBAction)switchTempScale:(id)sender {
-    
-    scaleConvert = tempSegment.selectedSegmentIndex;
-}
-
 - (IBAction)toggleLight:(id)sender {
     NSLog(@"Light Sensor switch activated!");
     [sensibot toggleLight:lightSwitch.on];
@@ -160,5 +154,10 @@
 - (IBAction)toggleSound:(id)sender {
     NSLog(@"Sound Sensor switch activated!");
     [sensibot toggleSound:soundSwitch.on];
+}
+
+- (IBAction)toggleAccel:(id)sender {
+    NSLog(@"Accelerometer Sensor switch activated!");
+    [sensibot toggleAccelerometer:accelSwitch.on];
 }
 @end

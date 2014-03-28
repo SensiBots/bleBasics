@@ -124,6 +124,21 @@
                 self.db = value;
                 NSLog(@"Sound Value: %i or %f", value, self.db);
                 break;
+            case 0x0E:
+                value = buffer[2] | buffer[1] << 8;
+                self.accelX = value;
+                NSLog(@"X accelerator: %i or %f", value, self.accelX);
+                break;
+            case 0x0F:
+                value = buffer[2] | buffer[1] << 8;
+                self.accelY = value;
+                NSLog(@"Y accelerator: %i or %f", value, self.accelY);
+                break;
+            case 0x10:
+                value = buffer[2] | buffer[1] << 8;
+                self.accelZ = value;
+                NSLog(@"Z accelerator: %i or %f", value, self.accelZ);
+                break;
             default:
                 NSLog(@"Did not recognize byte header");
                 break;
@@ -173,5 +188,19 @@
     [peripheral writeValue:data forCharacteristic:[characteristics objectForKey:temp] type:CBCharacteristicWriteWithoutResponse];
 
 }
-
+-(void) toggleAccelerometer: (BOOL) enable
+{
+    NSLog(@"About to toggleAccelerometer!");
+    UInt8 buf[3] = {0xA3, 0x00, 0x00};
+    
+    if (enable)
+        buf[1] = 0x01;
+    else
+        buf[1] = 0x00;
+    
+    NSData *data = [[NSData alloc] initWithBytes:buf length:3];
+    CBUUID *temp = [CBUUID UUIDWithString:@TX_TO_BLE_DEVICE_UUID];
+    [peripheral writeValue:data forCharacteristic:[characteristics objectForKey:temp] type:CBCharacteristicWriteWithoutResponse];
+    
+}
 @end

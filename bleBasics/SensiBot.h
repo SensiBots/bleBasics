@@ -23,6 +23,9 @@
 @property double temperature;
 @property double lux;
 @property double db;
+@property double accelX;
+@property double accelY;
+@property double accelZ;
 
 //General SensiBot methods
 -(void) toggleRSSIupdates: (BOOL) enable;
@@ -36,5 +39,6 @@
 -(void) toggleTemp: (BOOL) enable;
 -(void) toggleLight: (BOOL) enable;
 -(void) toggleSound: (BOOL) enable;
+-(void) toggleAccelerometer: (BOOL) enable;
 
 @end
