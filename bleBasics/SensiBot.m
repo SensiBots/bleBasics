@@ -126,17 +126,17 @@
                 break;
             case 0x0E:
                 value = buffer[2] | buffer[1] << 8;
-                self.accelX = value;
+                self.accelX = value/1000.0;
                 NSLog(@"X accelerator: %i or %f", value, self.accelX);
                 break;
             case 0x0F:
                 value = buffer[2] | buffer[1] << 8;
-                self.accelY = value;
+                self.accelY = value/1000.0;
                 NSLog(@"Y accelerator: %i or %f", value, self.accelY);
                 break;
             case 0x10:
                 value = buffer[2] | buffer[1] << 8;
-                self.accelZ = value;
+                self.accelZ = value/1000.0;
                 NSLog(@"Z accelerator: %i or %f", value, self.accelZ);
                 break;
             default:
