@@ -12,6 +12,7 @@
 		480A16781809CD29008C56A1 /* RBL_BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = 480A16761809CD29008C56A1 /* RBL_BLE.m */; };
 		480A167C180B0E64008C56A1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 480A167B180B0E64008C56A1 /* Default.png */; };
 		480A1680180B0F30008C56A1 /* TableCellPic.png in Resources */ = {isa = PBXBuildFile; fileRef = 480A167F180B0F30008C56A1 /* TableCellPic.png */; };
+		487DFBEA1925046F00186D28 /* iPhoneMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 487DFBE91925046F00186D28 /* iPhoneMain.storyboard */; };
 		48D28108180B3ADA00808BBB /* SensiBot.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D28107180B3ADA00808BBB /* SensiBot.m */; };
 		48D7A1E517F760330039C5BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D7A1E417F760330039C5BD /* Foundation.framework */; };
 		48D7A1E717F760330039C5BD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48D7A1E617F760330039C5BD /* CoreGraphics.framework */; };
@@ -50,6 +51,7 @@
 		480A167A1809CDF6008C56A1 /* RBL_BLE_Delegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBL_BLE_Delegate.h; sourceTree = "<group>"; };
 		480A167B180B0E64008C56A1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		480A167F180B0F30008C56A1 /* TableCellPic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TableCellPic.png; sourceTree = "<group>"; };
+		487DFBE91925046F00186D28 /* iPhoneMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = iPhoneMain.storyboard; path = ../iPhoneMain.storyboard; sourceTree = "<group>"; };
 		48D28106180B3ADA00808BBB /* SensiBot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SensiBot.h; sourceTree = "<group>"; };
 		48D28107180B3ADA00808BBB /* SensiBot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SensiBot.m; sourceTree = "<group>"; };
 		48D7A1E117F760330039C5BD /* bleBasics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bleBasics.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,6 +166,7 @@
 				48D7A1F317F760330039C5BD /* AppDelegate.h */,
 				48D7A1F417F760330039C5BD /* AppDelegate.m */,
 				48D7A1F617F760330039C5BD /* Main.storyboard */,
+				487DFBE91925046F00186D28 /* iPhoneMain.storyboard */,
 				48D7A1F917F760330039C5BD /* DetailViewController.h */,
 				48D7A1FA17F760330039C5BD /* DetailViewController.m */,
 				48D7A1FC17F760330039C5BD /* Images.xcassets */,
@@ -284,6 +287,7 @@
 			files = (
 				480A1680180B0F30008C56A1 /* TableCellPic.png in Resources */,
 				48D7A1FD17F760330039C5BD /* Images.xcassets in Resources */,
+				487DFBEA1925046F00186D28 /* iPhoneMain.storyboard in Resources */,
 				48D7A1EF17F760330039C5BD /* InfoPlist.strings in Resources */,
 				48D7A1F817F760330039C5BD /* Main.storyboard in Resources */,
 				480A167C180B0E64008C56A1 /* Default.png in Resources */,
@@ -446,6 +450,7 @@
 				GCC_PREFIX_HEADER = "bleBasics/bleBasics-Prefix.pch";
 				INFOPLIST_FILE = "bleBasics/bleBasics-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -460,6 +465,7 @@
 				GCC_PREFIX_HEADER = "bleBasics/bleBasics-Prefix.pch";
 				INFOPLIST_FILE = "bleBasics/bleBasics-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
