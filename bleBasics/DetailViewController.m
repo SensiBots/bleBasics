@@ -33,6 +33,13 @@
 {
     [super viewDidLoad];
     NSLog(@"View did load and starting updates");
+    UIScrollView *tempScrollView=(UIScrollView *)self.view.subviews[0];
+    if(tempScrollView)
+    {
+        [tempScrollView setScrollEnabled:YES];
+        tempScrollView.contentSize=CGSizeMake(320,604);
+    }
+
     [sensibot toggleRSSIupdates:YES];
     deviceNameValue.text = [NSString stringWithFormat:@"Device Name: %@", sensibot.peripheral.name];
     deviceUUIDValue.text = [NSString stringWithFormat:@"Device UUID: %@", [sensibot.peripheral.identifier UUIDString]];
