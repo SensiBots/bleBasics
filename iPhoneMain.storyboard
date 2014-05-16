@@ -34,7 +34,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="HrR-wG-pKZ" kind="push" id="HiH-dH-4bL"/>
+                                    <segue destination="HrR-wG-pKZ" kind="push" identifier="toBleDetails" id="HiH-dH-4bL"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -102,6 +102,9 @@
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="e9k-al-Ji0">
                                         <rect key="frame" x="137" y="548" width="51" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="toggleAccel:" destination="HrR-wG-pKZ" eventType="valueChanged" id="e3k-aa-eCX"/>
+                                        </connections>
                                     </switch>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accelerator" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="C8a-7R-P1a">
                                         <rect key="frame" x="15" y="558" width="85" height="21"/>
@@ -113,10 +116,16 @@
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="oD6-JL-4hW">
                                         <rect key="frame" x="137" y="303" width="51" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="toggleLED:" destination="HrR-wG-pKZ" eventType="valueChanged" id="mtX-a2-MkC"/>
+                                        </connections>
                                     </switch>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="jA8-0p-S8Z">
                                         <rect key="frame" x="131" y="458" width="51" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="toggleLight:" destination="HrR-wG-pKZ" eventType="valueChanged" id="Ypv-Rb-0II"/>
+                                        </connections>
                                     </switch>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Light Bot" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zGM-93-Lm4">
                                         <rect key="frame" x="15" y="468" width="63" height="21"/>
@@ -126,7 +135,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device UUID:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="k1R-nl-oH9">
-                                        <rect key="frame" x="15" y="155" width="103" height="21"/>
+                                        <rect key="frame" x="15" y="155" width="161" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -150,6 +159,9 @@
                                         <state key="normal" title="Buzzzzzz!">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="activateBuzzer:" destination="HrR-wG-pKZ" eventType="touchUpInside" id="Y5x-m1-dLL"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device Vendor Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8B3-8f-eFU">
                                         <rect key="frame" x="15" y="169" width="166" height="21"/>
@@ -164,6 +176,9 @@
                                         <state key="normal" title="Sing!">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="singSong:" destination="HrR-wG-pKZ" eventType="touchUpInside" id="gAA-XL-Xrk"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temp Bot" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="C7u-ay-M2P">
                                         <rect key="frame" x="122" y="415" width="66" height="21"/>
@@ -178,6 +193,9 @@
                                         <state key="normal" title="Flash!">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="flashLEDs:" destination="HrR-wG-pKZ" eventType="touchUpInside" id="4Mm-v7-G72"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sing Star-Spangled Banner!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gSG-jQ-V6Q">
                                         <rect key="frame" x="104" y="342" width="158" height="21"/>
@@ -187,7 +205,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uNG-6F-k0w">
-                                        <rect key="frame" x="15" y="140" width="87" height="21"/>
+                                        <rect key="frame" x="15" y="140" width="161" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -196,9 +214,12 @@
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="Ofg-xo-ORO">
                                         <rect key="frame" x="15" y="405" width="51" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="toggleTemp:" destination="HrR-wG-pKZ" eventType="valueChanged" id="g4R-M4-Esz"/>
+                                        </connections>
                                     </switch>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RSSI:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Cnl-c0-GON">
-                                        <rect key="frame" x="266" y="140" width="44" height="21"/>
+                                        <rect key="frame" x="239" y="140" width="61" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -221,6 +242,9 @@
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="aKE-zT-x7c">
                                         <rect key="frame" x="142" y="222" width="51" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="toggleBackLight:" destination="HrR-wG-pKZ" eventType="valueChanged" id="O5l-ZF-n2k"/>
+                                        </connections>
                                     </switch>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device Library Version:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5aa-iB-jT2">
                                         <rect key="frame" x="15" y="184" width="176" height="21"/>
@@ -238,6 +262,9 @@
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="C5r-EM-vyQ">
                                         <rect key="frame" x="15" y="505" width="51" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="toggleSound:" destination="HrR-wG-pKZ" eventType="valueChanged" id="RU1-Wq-5Qq"/>
+                                        </connections>
                                     </switch>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="----" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="ejn-3J-Ijs" userLabel="Zenko">
                                         <rect key="frame" x="218" y="510" width="87" height="30"/>
@@ -253,6 +280,23 @@
                     <navigationItem key="navigationItem" id="w4e-N2-Ydw"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="668"/>
+                    <connections>
+                        <outlet property="accelSwitch" destination="e9k-al-Ji0" id="JVY-5n-uRx"/>
+                        <outlet property="accelValue" destination="rGl-wb-GlC" id="JEA-ca-a0I"/>
+                        <outlet property="backlightSwitch" destination="aKE-zT-x7c" id="dUA-Uq-yF0"/>
+                        <outlet property="deviceLibVersionValue" destination="5aa-iB-jT2" id="vhx-ie-e1w"/>
+                        <outlet property="deviceNameValue" destination="uNG-6F-k0w" id="1m1-zJ-2Hh"/>
+                        <outlet property="deviceUUIDValue" destination="k1R-nl-oH9" id="gMH-Hh-tDo"/>
+                        <outlet property="deviceVendorNameValue" destination="8B3-8f-eFU" id="Uty-al-KtY"/>
+                        <outlet property="ledSwitch" destination="oD6-JL-4hW" id="jKd-Im-tyX"/>
+                        <outlet property="lightSwitch" destination="jA8-0p-S8Z" id="nr7-gu-Kd4"/>
+                        <outlet property="lightValue" destination="g0B-Jd-7pL" id="eWz-8X-eHA"/>
+                        <outlet property="rssiValue" destination="Cnl-c0-GON" id="FaG-Mq-h5i"/>
+                        <outlet property="soundSwitch" destination="C5r-EM-vyQ" id="PIC-co-gdU"/>
+                        <outlet property="soundValue" destination="ejn-3J-Ijs" id="RbW-4Z-Pd0"/>
+                        <outlet property="tempSwitch" destination="Ofg-xo-ORO" id="VtX-Qh-s5f"/>
+                        <outlet property="tempValue" destination="Emi-wD-xfx" id="pKd-Bx-jLc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Csk-f4-sS7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
