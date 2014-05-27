@@ -34,7 +34,8 @@
     [super viewDidLoad];
     NSLog(@"View did load and starting updates");
     UIScrollView *tempScrollView=(UIScrollView *)self.view.subviews[0];
-    if(tempScrollView)
+    
+    if([tempScrollView isKindOfClass:[UIScrollView class]])
     {
         [tempScrollView setScrollEnabled:YES];
         tempScrollView.contentSize=CGSizeMake(320,604);
